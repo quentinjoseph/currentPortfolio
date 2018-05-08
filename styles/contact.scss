@@ -1,0 +1,25 @@
+.contact-me {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  a {
+    color: black
+  }
+  a:hover {
+    color: orange;
+    &:first-of-type {
+      color: blue;
+    }
+  }
+  h3 {
+    border-bottom: 1px black solid;
+    text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
+  }
+}
+
+.contact-icons {
+  font-size: 250%;
+  padding: 0 5%;
+}

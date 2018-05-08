@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="font_awesome/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="litty/lity.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/foundation.css">
+	<link rel="stylesheet" type="text/css" href="styles/css/style.css">
+	<title>Quentin Joseph</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body ng-app='myapp'>
+	<nav id='navID'>
+
+		<!-- left side of nav -->
+		<div class='selections'>
+			<ul onclick='navSelect(event)' class="nav-ul">
+				<li><a class='nav-items' href="#!/first"> Home </a></li>
+				<li><a class='nav-items' href="#!/about"> About Me </a></li>
+				<li><a class='nav-items' href="#!/portfolio"> Portfolio </a></li>
+				<!-- <li><a class='nav-items' href="#!/audio-video"> Media </a></li> -->
+				<li><a class='nav-items' href="#!/contact"> Contact </a></li>
+			</ul>
+		</div>
+
+		<!-- right side of div -->
+		<div class='name'>
+			<h4><a class='nav-items' onclick='clearSelected()' href="#!/first">Quentin Joseph</a></h4>
+		</div>
+
+
+		<!-- hamburger menu for smaller screens -->
+		<div onclick ="openNav()" id="mobNav" class="hamburger" style="cursor:pointer" onclick="openNav()">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		<div onclick='mobileNavSelect(event)' id="mySidenav" class="sidenav" onmouseleave="closeNav()">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a onclick="closeNav()" href="#!/first">home</a>
+		  <a onclick="closeNav()" href="#!/about">about me</a>
+		  <a onclick="closeNav()" href="#!/portfolio">portfolio</a>
+		  <!-- <a onclick="closeNav()" href="#!/audio-video">media</a> -->
+		  <a onclick="closeNav()" href="#!/contact">contact</a>
+		</div>
+
+	</nav>
+ <div class="nav-spacer"></div>
+<ng-view></ng-view>
+
+<script src="/lib/angular.min.js"></script>
+<script src="/lib/angular-route.min.js"></script>
+<script src="js/routes.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/foundation.min.js"></script>
+<script type="text/javascript" src="js/vendor/what-input.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="litty/lity.min.js"></script>
+</body>
+</html>

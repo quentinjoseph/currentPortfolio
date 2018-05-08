@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+$font : 'Open Sans';
+$light-grey: rgb(174, 173, 173);
+html,body{
+	margin: 0;
+	height: 100%;
+}
+
+h1,h4,p, ul{
+		margin:0;
+	}
+
+
+/*NAV BAR*/
+@import "nav-bar.scss";
+
+/*FIRST PAGE*/
+@import "first-page.scss";
+
+/*ABOUT ME*/
+@import "about-me.scss";
+
+/*PORTFOLIO*/
+@import "portfolio.scss";
+
+/*AUDIO VIDEO*/
+@import "audio-video.scss";
+
+/*CONTACT*/
+@import "contact.scss";

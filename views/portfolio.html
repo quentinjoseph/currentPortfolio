@@ -1,0 +1,43 @@
+<div class="portfolio_container">
+	<div class="portfolio_holder">
+		<h3>Portfolio</h3>
+
+		<div class="portfolio-item" ng-repeat='site in sites'>
+			<div class="portfolio-thumb">
+				<a target='_blank' href="{{site.link}}"><img src="{{site.img}}">
+				</a>
+			</div>
+			<div class="portfolio-details">
+				<a target='_blank' href="{{site.link}}"><p><strong>{{site.title}}</strong></p>
+				<p>{{site.description}}</p></a>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div>
+
+<!-- <div class="portfolio-container">
+<h2 class="title">Sites I've Worked On</h2>
+  <div class=" cardContainer" ng-repeat='site in sites' >
+    <div class="card">
+      <div class="tile-content front" style="background-image: url('{{site.img}}');">
+        
+        
+        <div class="read-more"> -->
+          <!-- {{site.title}} -->
+        <!-- </div>
+      </div>
+      <div class="tile-content back">
+        <i class="fa fa-times cardClose" aria-hidden="true"></i>
+        <div class="card-content" tabindex="-1">
+          <p>{{site.description}}</p>
+          <a href="{{site.link}}" target="_blank">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> -->

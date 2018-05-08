@@ -1,0 +1,29 @@
+.holder {
+  height: calc(100vh - 100px);
+  background-image: url(/img/bg2.jpg);
+  background-size: cover;
+  @keyframes title-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1
+    }
+  }
+  .title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    letter-spacing: 1rem;
+    text-align: center;
+    font-family: $font;
+    padding: 10px;
+  }
+  .title.front-page h1 {
+    font-size: 52px;
+  }
+}
