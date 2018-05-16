@@ -4,6 +4,12 @@ app.controller('controller1', function ($scope, $location, $http){
 
   $scope.sites =[
   	{
+      title: 'Finnea Group',
+      img: '/img/portfolio-thumbs/finnea.jpg',
+      link: 'http://finneagroup.com/',
+      description: 'Sketch file conversion for the homepage and many other pages on this site. A Wordpress site created with HTML, Javascript, Jquery, PHP, and Sass. '
+  	},
+  	{
       title: 'LJPR',
       img: '/img/portfolio-thumbs/ljpr.jpg',
       link: 'http://ljpr.com/',
